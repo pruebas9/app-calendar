@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}APP-Calendario{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        {# <link href="{{ asset('assets/css/styles.css') }}" rel='stylesheet' /> #}
+        <!-- CSS de Fullcalendar -->
+        <link rel="stylesheet" href="{{ asset('assets/fullcalendar/fullcalendar.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/fullcalendar/fullcalendar.css') }}" />
+        <!-- CSS de Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+        <!-- CSS -->
+        <link href="{{ asset('assets/css/styles.css') }}" rel='stylesheet' />
+        <!-- JS de Fullcalendar -->
+        <script src="{{ asset('assets/fullcalendar/lib/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/fullcalendar/lib/moment.min.js') }}"></script>
+        <script src="{{ asset('assets/fullcalendar/fullcalendar.js') }}"></script>
+        <script src="{{ asset('assets/fullcalendar/locale/es.js') }}"></script>
+        <!-- JS de Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        {% include 'AppBundle:layouts:navbar.html.twig' %} 
+
+        {% include 'AppBundle:layouts:content.html.twig' %}
+
+        {% block javascripts %}{% endblock %}
+        <script src="{{ asset('assets/js/custom.js') }}"></script>
+    </body>
+    <footer>
+        <hr>
+        {% include 'AppBundle:layouts:footer.html.twig' %}
+    </footer>
+</html>

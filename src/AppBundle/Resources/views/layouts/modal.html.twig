@@ -1,0 +1,84 @@
+<div class="card-body form-modal">
+    <!-- Modal Evento (Crear, modificar, eliminar) -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content form-modal">
+
+                <div class="modal-header fondof7">
+                    <h5 class="modal-title" id="titleEvent">Crear Evento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <!-- <label for="id">Id</label> -->
+                                    <input type="hidden" class="form-control" id="id" placeholder="Id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Titulo</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Título">
+                                </div>
+                            </div>                                      
+                        </div>                      
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- <label for="start">Fecha comienzo</label> -->
+                                    <input type="hidden" class="form-control" id="start" placeholder="Fecha">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="startHour">Hora comienzo</label>
+                                    <input type="text" class="form-control" id="startHour" value="10:30" placeholder="Hora comienzo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="end">Fecha finalización</label>
+                                    <input type="text" class="form-control" id="end" placeholder="Fecha">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="endHour">Hora finalización</label>
+                                    <input type="text" class="form-control" id="endHour" value="11:30" placeholder="Hora finalización">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="description">Descripción</label>
+                                    <textarea class="form-control" id="description" rows="4" placeholder="Descripción"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="hour">Color</label>
+                                    <input type="color" class="form-control" id="color" value="#0000FF" placeholder="Color">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer fondof7">
+                    <button type="button" id="btn-crear" class="btn btn-outline-dark">Crear</button>
+                    <button type="button" id="btn-actualizar" class="btn btn-outline-dark">Modificar</button>
+                    <button type="button" id="btn-eliminar" class="btn btn-outline-dark">Eliminar</button>
+                    <button type="button" id="btn-cerrar" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

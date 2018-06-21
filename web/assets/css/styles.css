@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+  font-family: 'Ubuntu', sans-serif !important;  
+}
+
+.main-content{
+    padding-top: 25px;
+}
+.fondof7{
+    background: #F7F7F7 !important;
+}
+.seccion{
+    border-radius: 0px !important;
+}
+.box-sombra {
+    -webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.17);
+    box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.17);
+}
+.seccion .card-header {
+    /*ackground: #45a7d1;*/
+}
+.seccion .card-body {
+    /*background: #e6f3f9;*/
+}
+.menu-nav{
+    background-color: #0d3d51 !important;
+}
+.form-modal {
+    border-radius: 0px !important;
+}
+
+.nav-link i{
+    margin-right: 5px;
+}
+body .fc {
+    font-size: 0.9em;
+}
